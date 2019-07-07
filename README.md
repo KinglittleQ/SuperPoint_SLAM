@@ -65,7 +65,7 @@ We use modified versions of the [DBoW3](https://github.com/rmsalinas/DBow3) inst
 
 ## Libtorch
 
-We use Pytorch C++ API to implement SuperPoint model which can be built as follows:
+We use Pytorch C++ API to implement SuperPoint model. It can be built as follows:
 
 ``` shell
 git clone --recursive -b v1.0.1 https://github.com/pytorch/pytorch
@@ -122,4 +122,11 @@ This is the default mode. The system runs in parallal three threads: Tracking, L
 
 ### Localization Mode
 This mode can be used when you have a good map of your working area. In this mode the Local Mapping and Loop Closing are deactivated. The system localizes the camera in the map (which is no longer updated), using relocalization if needed. 
+
+# TODO lists
+
+
+- [ ] Upload the vocabulary of SuperPoint
+- [ ] Clean the code
+- [ ] Stereo, RGBD
 
