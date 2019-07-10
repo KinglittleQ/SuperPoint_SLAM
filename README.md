@@ -103,7 +103,11 @@ set(XX_DIR "your_path")
 # set(Eigen3_DIR "usr/share/Eigen3")
 ```
 
-# 4. Monocular Examples
+# 4. Download Vocabulary
+
+You can download the vocabulary from [google drive](https://drive.google.com/file/d/1p1QEXTDYsbpid5ELp3IApQ8PGgm_vguC/view?usp=sharing) or [BaiduYun](https://pan.baidu.com/s/1fygQil78GpoPm0zoi6BMng) (code: de3g). And then put it into `Vocabulary` directory. The vocabulary was trained on [Bovisa_2008-09-01](http://www.rawseeds.org/rs/datasets/view//7) using DBoW3 library. Branching factor k and depth levels L are set to 5 and 10 respectively.
+
+# 5. Monocular Examples
 
 ## KITTI Dataset  
 
@@ -114,7 +118,7 @@ set(XX_DIR "your_path")
 ./Examples/Monocular/mono_kitti Vocabulary/ORBvoc.txt Examples/Monocular/KITTIX.yaml PATH_TO_DATASET_FOLDER/dataset/sequences/SEQUENCE_NUMBER
 ```
 
-# 5. SLAM and Localization Modes
+# 6. SLAM and Localization Modes
 You can change between the *SLAM* and *Localization mode* using the GUI of the map viewer.
 
 ### SLAM Mode
@@ -126,7 +130,7 @@ This mode can be used when you have a good map of your working area. In this mod
 # TODO lists
 
 
-- [ ] Upload the vocabulary of SuperPoint
+- [x] Upload the vocabulary of SuperPoint
 - [ ] Clean the code
 - [ ] Stereo, RGBD
 
