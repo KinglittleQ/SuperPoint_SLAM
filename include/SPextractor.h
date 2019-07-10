@@ -28,6 +28,10 @@
 #include <torch/torch.h>
 #include "SuperPoint.h"
 
+#ifdef EIGEN_MPL2_ONLY
+#undef EIGEN_MPL2_ONLY
+#endif
+
 
 namespace ORB_SLAM2
 {

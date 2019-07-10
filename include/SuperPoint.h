@@ -7,6 +7,10 @@
 
 #include <vector>
 
+#ifdef EIGEN_MPL2_ONLY
+#undef EIGEN_MPL2_ONLY
+#endif
+
 
 namespace ORB_SLAM2
 {
