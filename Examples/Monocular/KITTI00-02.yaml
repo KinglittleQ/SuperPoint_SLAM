@@ -42,7 +42,7 @@ ORBextractor.nLevels: 1
 # ORBextractor.minThFAST: 0.08
 
 ORBextractor.iniThFAST: 0.015
-ORBextractor.minThFAST: 0.015
+ORBextractor.minThFAST: 0.007
 
 
 #--------------------------------------------------------------------------------------------

@@ -101,14 +101,14 @@ def align(model,data):
 
 if __name__ == '__main__':
   #Path to the times.txt in KITTI dataset
-	ground_time = np.loadtxt('/media/deng/下载和图片/KITTI_raw/data_odometry_gray/dataset/sequences/04/times.txt')
+	ground_time = np.loadtxt('data_odometry_gray/dataset/sequences/04/times.txt')
   
   #Path to the KeyFrameTrajectory.txt file
 	# path = sys.argv[1]
 	res_time = np.loadtxt(sys.argv[1])
   
   #Path to the ground truth file
-	ground_data = np.loadtxt('/media/deng/下载和图片/KITTI_raw/data_odometry_gray/dataset/poses/04.txt')
+	ground_data = np.loadtxt('data_odometry_gray/dataset/poses/04.txt')
 	data= gen_data(ground_time, res_time, ground_data)
 	ground_points = np.asarray(get_coo(data))
 	re_points = np.asarray(get_points(res_time))
