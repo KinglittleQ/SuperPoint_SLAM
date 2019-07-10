@@ -122,14 +122,25 @@ You can download the vocabulary from [google drive](https://drive.google.com/fil
 ./Examples/Monocular/mono_kitti Vocabulary/ORBvoc.txt Examples/Monocular/KITTIX.yaml PATH_TO_DATASET_FOLDER/dataset/sequences/SEQUENCE_NUMBER
 ```
 
-# 6. SLAM and Localization Modes
-You can change between the *SLAM* and *Localization mode* using the GUI of the map viewer.
+# 6. Evaluation Results on KITTI
 
-### SLAM Mode
-This is the default mode. The system runs in parallal three threads: Tracking, Local Mapping and Loop Closing. The system localizes the camera, builds new map and tries to close loops.
+Here are the evaluation results of monocular benchmark on KITTI using RMSE(m) as metric.
 
-### Localization Mode
-This mode can be used when you have a good map of your working area. In this mode the Local Mapping and Loop Closing are deactivated. The system localizes the camera in the map (which is no longer updated), using relocalization if needed. 
+| Seq. |  Dimension  |    ORB    | SuperPoint |
+| :--: | :---------: | :-------: | :--------: |
+|  00  |  564 x 496  | **5.33**  |     X      |
+|  01  | 1157 × 1827 |     X     |     X      |
+|  02  |  599 × 946  | **21.28** |     X      |
+|  03  |  471 × 199  |   1.51    |  **1.04**  |
+|  04  |  0.5 × 394  |   1.62    |  **0.35**  |
+|  05  |  479 × 426  |   4.85    |  **3.73**  |
+|  06  |  23 × 457   | **12.34** |   14.27    |
+|  07  |  191 × 209  | **2.26**  |    3.02    |
+|  08  |  808 × 391  |   46.68   | **39.63**  |
+|  09  |  465 × 568  | **6.62**  |     X      |
+|  10  |  671 × 177  |   8.80    |  **5.31**  |
+
+
 
 # TODO lists
 
