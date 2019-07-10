@@ -2,6 +2,10 @@
 
 This repository was forked from ORB-SLAM2 https://github.com/raulmur/ORB_SLAM2.  SuperPoint-SLAM is a modified version of ORB-SLAM2 which use SuperPoint as its feature detector and descriptor. The pre-trained model of SuperPoint  come from https://github.com/MagicLeapResearch/SuperPointPretrainedNetwork.
 
+![overview](pic/overview.png)
+
+![traj](pic/traj.png)
+
 
 ### Related Publications:
 
