@@ -11,7 +11,7 @@ This repository was forked from ORB-SLAM2 https://github.com/raulmur/ORB_SLAM2. 
 
 [DBoW2 Place Recognizer] Dorian Gálvez-López and Juan D. Tardós. **Bags of Binary Words for Fast Place Recognition in Image Sequences**. *IEEE Transactions on Robotics,* vol. 28, no. 5, pp.  1188-1197, 2012. **[PDF](http://doriangalvez.com/php/dl.php?dlp=GalvezTRO12.pdf)**
 
-[SuperPoint] DeTone D, Malisiewicz T, Rabinovich A. **Superpoint: Self-supervised interest point detection and description**. InProceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops 2018 (pp. 224-236). [PDF](https://arxiv.org/abs/1712.07629)
+[SuperPoint] DeTone D, Malisiewicz T, Rabinovich A. **Superpoint: Self-supervised interest point detection and description**. InProceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops 2018 (pp. 224-236). **[PDF](https://arxiv.org/abs/1712.07629)**
 
 # 1. License (inherited from ORB-SLAM2)
 
@@ -91,7 +91,7 @@ chmod +x build.sh
 ./build.sh
 ```
 
-This will create **libORB_SLAM2.so**  at *lib* folder and the executables **mono_tum**, **mono_kitti**, **rgbd_tum**, **stereo_kitti**, **mono_euroc** and **stereo_euroc** in *Examples* folder.
+This will create **libSuerPoint_SLAM.so**  at *lib* folder and the executables **mono_tum**, **mono_kitti**, **mono_euroc** in *Examples* folder.
 
 **TIPS:**
 
