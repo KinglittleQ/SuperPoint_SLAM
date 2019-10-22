@@ -144,10 +144,3 @@ Here are the evaluation results of monocular benchmark on KITTI using RMSE(m) as
 
 
 
-# TODO lists
-
-
-- [x] Upload the vocabulary of SuperPoint
-- [ ] Clean the code
-- [ ] Stereo, RGBD
-
