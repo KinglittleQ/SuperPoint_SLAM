@@ -19,7 +19,7 @@ This repository was forked from ORB-SLAM2 https://github.com/raulmur/ORB_SLAM2. 
 
 [SuperPoint] DeTone D, Malisiewicz T, Rabinovich A. **Superpoint: Self-supervised interest point detection and description**. InProceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops 2018 (pp. 224-236). **[PDF](https://arxiv.org/abs/1712.07629)**
 
-# 1. License (inherited from ORB-SLAM2)
+## 1. License (inherited from ORB-SLAM2)
 
 ORB-SLAM2 is released under a [GPLv3 license](https://github.com/raulmur/ORB_SLAM2/blob/master/License-gpl.txt). For a list of all code/library dependencies (and associated licenses), please see [Dependencies.md](https://github.com/raulmur/ORB_SLAM2/blob/master/Dependencies.md).
 
@@ -51,25 +51,25 @@ if you use ORB-SLAM2 (Stereo or RGB-D) in an academic work, please cite:
       year={2017}
      }
 
-# 2. Prerequisites
+## 2. Prerequisites
 We have tested the library in **Ubuntu 12.04**, **14.04** and **16.04**, but it should be easy to compile in other platforms. A powerful computer (e.g. i7) will ensure real-time performance and provide more stable and accurate results.
 
-## C++11 or C++0x Compiler
+### C++11 or C++0x Compiler
 We use the new thread and chrono functionalities of C++11.
 
-## Pangolin
+### Pangolin
 We use [Pangolin](https://github.com/stevenlovegrove/Pangolin) for visualization and user interface. Dowload and install instructions can be found at: https://github.com/stevenlovegrove/Pangolin.
 
-## OpenCV
+### OpenCV
 We use [OpenCV](http://opencv.org) to manipulate images and features. Dowload and install instructions can be found at: http://opencv.org. **Required at leat 2.4.3. Tested with OpenCV 2.4.11 and OpenCV 3.2**.
 
-## Eigen3
+### Eigen3
 Required by g2o (see below). Download and install instructions can be found at: http://eigen.tuxfamily.org. **Required at least 3.1.0**.
 
-## DBoW3 and g2o (Included in Thirdparty folder)
+### DBoW3 and g2o (Included in Thirdparty folder)
 We use modified versions of [DBoW3](https://github.com/rmsalinas/DBow3) (instead of DBoW2) library to perform place recognition and [g2o](https://github.com/RainerKuemmerle/g2o) library to perform non-linear optimizations. Both modified libraries (which are BSD) are included in the *Thirdparty* folder.
 
-## Libtorch
+### Libtorch
 
 We use Pytorch C++ API to implement SuperPoint model. It can be built as follows:
 
@@ -83,7 +83,7 @@ It may take quite a long time to download and build. Please wait with patience.
 
 **NOTE**: Do not use the pre-built package in the official website, it would cause some errors.
 
-# 3. Building SuperPoint-SLAM library and examples
+## 3. Building SuperPoint-SLAM library and examples
 
 Clone the repository:
 ```
@@ -109,13 +109,13 @@ set(XX_DIR "your_path")
 # set(Eigen3_DIR "usr/share/Eigen3")
 ```
 
-# 4. Download Vocabulary
+## 4. Download Vocabulary
 
 You can download the vocabulary from [google drive](https://drive.google.com/file/d/1p1QEXTDYsbpid5ELp3IApQ8PGgm_vguC/view?usp=sharing) or [BaiduYun](https://pan.baidu.com/s/1fygQil78GpoPm0zoi6BMng) (code: de3g). And then put it into `Vocabulary` directory. The vocabulary was trained on [Bovisa_2008-09-01](http://www.rawseeds.org/rs/datasets/view//7) using DBoW3 library. Branching factor k and depth levels L are set to 5 and 10 respectively.
 
-# 5. Monocular Examples
+## 5. Monocular Examples
 
-## KITTI Dataset  
+### KITTI Dataset  
 
 1. Download the dataset (grayscale images) from http://www.cvlibs.net/datasets/kitti/eval_odometry.php 
 
@@ -124,7 +124,7 @@ You can download the vocabulary from [google drive](https://drive.google.com/fil
 ./Examples/Monocular/mono_kitti Vocabulary/ORBvoc.txt Examples/Monocular/KITTIX.yaml PATH_TO_DATASET_FOLDER/dataset/sequences/SEQUENCE_NUMBER
 ```
 
-# 6. Evaluation Results on KITTI
+## 6. Evaluation Results on KITTI
 
 Here are the evaluation results of monocular benchmark on KITTI using RMSE(m) as metric.
 
@@ -142,5 +142,17 @@ Here are the evaluation results of monocular benchmark on KITTI using RMSE(m) as
 |  09  |  465 × 568  | **6.62**  |     X      |
 |  10  |  671 × 177  |   8.80    |  **5.31**  |
 
+## Citation
 
+If you find this useful, please cite our paper.
+```
+@inproceedings{deng2019comparative,
+  title={Comparative Study of Deep Learning Based Features in SLAM},
+  author={Deng, Chengqi and Qiu, Kaitao and Xiong, Rong and Zhou, Chunlin},
+  booktitle={2019 4th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)},
+  pages={250--254},
+  year={2019},
+  organization={IEEE}
+}
+```
 
