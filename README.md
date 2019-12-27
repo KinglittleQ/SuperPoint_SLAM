@@ -10,11 +10,6 @@ This repository was forked from ORB-SLAM2 https://github.com/raulmur/ORB_SLAM2. 
 
 ![traj](pic/traj.png)
 
-
-### Related Publications:
-
-Deng, C., Qiu, K., Xiong, R., & Zhou, C. (2019, July). **Comparative Study of Deep Learning Based Features in SLAM.** In 2019 4th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS) (pp. 250-254). IEEE.
-
 ## 1. License (inherited from ORB-SLAM2)
 
 See LICENSE file.
