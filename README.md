@@ -1,10 +1,10 @@
 # SuperPoint-SLAM
 
-**UPDATE: Add citation**
-
-This repository was forked from ORB-SLAM2 https://github.com/raulmur/ORB_SLAM2.  SuperPoint-SLAM is a modified version of ORB-SLAM2 which use SuperPoint as its feature detector and descriptor. The pre-trained model of SuperPoint  come from https://github.com/MagicLeapResearch/SuperPointPretrainedNetwork.
+**UPDATE: This repo is no longer maintained now. Please refer to https://github.com/jiexiong2016/GCNv2_SLAM if you are intereseted in SLAM with deep learning image descriptors.**
 
 **NOTE: SuperPoint-SLAM is not guaranteed to outperform ORB-SLAM. It's just a trial combination of SuperPoint and ORB-SLAM. I release the code for people who wish to do some research about neural feature based SLAM.**
+
+This repository was forked from ORB-SLAM2 https://github.com/raulmur/ORB_SLAM2.  SuperPoint-SLAM is a modified version of ORB-SLAM2 which use SuperPoint as its feature detector and descriptor. The pre-trained model of SuperPoint  come from https://github.com/MagicLeapResearch/SuperPointPretrainedNetwork.
 
 ![overview](pic/overview.png)
 
